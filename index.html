@@ -4,39 +4,35 @@
   <head>
 
   <style>
+    @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); 
   .about{
     text-align: center;
     font-weight: bold;
     color: white;
   }
     .intr{
-    font-family:微軟正黑體;
+    font-family:'Noto Sans TC', sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: white;
   }
     .book{
-    font-family:微軟正黑體;
+    font-family:'Noto Sans TC', sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: black;
   }
   .book2{
-    font-family:微軟正黑體;
-    font-size: 20px;的族群來說
+    font-family:'Noto Sans TC', sans-serif;
+    font-size: 20px;
     color: black;
   }
   </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112623029-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-112623029-1');
-</script>
+
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -105,24 +101,34 @@
         <h2 class="text-center">Portfolio</h2>
         <hr class="star-primary">
           <br>
-          <br>
-        <h3 class="text-center">UI設計作品</h3>
-          <br>
-          <br>
+
+
+          <div class="mixbtn">
+              <ul>  
+                  <li class="filter" data-filter="all"><a class="mixa" href="#" onclick="return false">All</a></li>
+                  <li class="filter" data-filter=".web"><a class="mixa" href="#" onclick="return false">Web</a></li>
+                  <li class="filter" data-filter=".mobile"><a class="mixa" href="#" onclick="return false">Mobile</a></li>
+                  <li class="filter" data-filter=".graphic"><a class="mixa" href="#" onclick="return false">Graphic</a></li>
+                  <li class="filter" data-filter=".research"><a class="mixa" href="#" onclick="return false">UserResearch</a></li>
+              </ul>
+          </div>
+
+
         <div class="row">
 
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>電梯介面設計</h3>
+          <div class="col-sm-4 portfolio-item mix mobile">
+              <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <!--i class="fa fa-search-plus fa-3x"></i-->
+                    <h3>電梯介面設計</h3>
+                  </div>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/UI-Demo hand.png" alt="">
-            </a>
+                <img class="img-fluid" src="img/portfolio/UI-Demo hand.png" alt="">
+              </a>
           </div>
-          <div class="col-sm-4 portfolio-item">
+          
+          <div class="col-sm-4 portfolio-item mix web">
             <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
@@ -133,7 +139,8 @@
               <img class="img-fluid" src="img/portfolio/web.png" alt="">
             </a>
           </div>
-          <div class="col-sm-4 portfolio-item">
+
+          <div class="col-sm-4 portfolio-item mix mobile">
             <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
@@ -144,96 +151,98 @@
               <img class="img-fluid" src="img/portfolio/band.png" alt="">
             </a>
           </div>
-        </div>
-      </div>
-          <br>
-          <br>  
-        <h3 class="text-center">平面設計作品</h3>
-          <br>
-          <br> 
-        <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+
+          <div class="col-sm-4 portfolio-item mix mobile web">
+            <a class="portfolio-link" href="#portfolioModal04" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>插圖</h3>
+                  <h3>Gocha Dog</h3>
                 </div>
               </div>
-
-              <img class="img-fluid" src="img/portfolio/boat.png" alt="">
+              <img class="img-fluid" src="img/portfolio/dog0.png" alt="">
             </a>
           </div>
-          <div class="col-sm-4 portfolio-item">
-            
-            <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>海報設計</h3>
+
+          <div class="col-sm-4 portfolio-item mix graphic">
+              <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <!--i class="fa fa-search-plus fa-3x"></i-->
+                    <h3>名片設計</h3>
+                  </div>
                 </div>
-              </div>
+                <img class="img-fluid" src="img/portfolio/boat.png" alt="">
+              </a>
+            </div>
+
+            <div class="col-sm-4 portfolio-item mix graphic">
               
-              <img class="img-fluid" src="img/portfolio/poster2.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>貼圖設計</h3>
+              <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <!--i class="fa fa-search-plus fa-3x"></i-->
+                    <h3>插圖/海報設計</h3>
+                  </div>
                 </div>
+                
+                <img class="img-fluid" src="img/portfolio/poster2.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-sm-4 portfolio-item mix graphic">
+              <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
+                <div class="caption">
+                  <div class="caption-content">
+                    <!--i class="fa fa-search-plus fa-3x"></i-->
+                    <h3>貼圖設計</h3>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/line.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-sm-4 portfolio-item mix research">
+                <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <!--i class="fa fa-search-plus fa-3x"></i-->
+                      <h3>使用者訪談</h3>
+                    </div>
+                  </div>
+    
+                  <img class="img-fluid" src="img/portfolio/contract.png" alt="">
+                </a>
               </div>
-              <img class="img-fluid" src="img/portfolio/line.jpg" alt="">
-            </a>
-          </div>
+
+              <div class="col-sm-4 portfolio-item mix research">
+                
+                <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <!--i class="fa fa-search-plus fa-3x"></i-->
+                      <h3>分類法</h3>
+                    </div>
+                  </div>
+                  
+                  <img class="img-fluid" src="img/portfolio/contract.png" alt="">
+                </a>
+              </div>
+
+              <div class="col-sm-4 portfolio-item mix research">
+                <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <!--i class="fa fa-search-plus fa-3x"></i-->
+                      <h3>資訊需求研究</h3>
+                    </div>
+                  </div>
+                  <img class="img-fluid" src="img/portfolio/contract.png" alt="">
+                </a>
+              </div>
         </div>
+
       </div>
-
-          <br>
-          <br>  
-        <h3 class="text-center">使用者研究之書面報告</h3>
-          <br>
-          <br> 
-        <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>使用者訪談</h3>
-                </div>
-              </div>
-
-              <img class="img-fluid" src="img/portfolio/contract.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            
-            <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>分類法</h3>
-                </div>
-              </div>
-              
-              <img class="img-fluid" src="img/portfolio/contract.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>資訊需求研究</h3>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/contract.png" alt="">
-            </a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -290,7 +299,7 @@
                 <li>UX Research Surveys</a></li>
                 <li><a href="https://docs.google.com/document/d/e/2PACX-1vSt-xZdCYUpuAb2Yj9J58tIr9PhgQQpYNCq-8EfqAYprs0E0toTBCX9-EhwhbJxBKHMEwQm5PjLGeAL/pub" title="Google" target="_blank">A Brief Incomplete History of UX</a></li>
               </ul>
-            <p class="book"><a href="blog/post.html" title="Google" target="_blank">讀書心得</a>
+            <p class="book"><a href="https://mojanlyux.blogspot.tw/" title="Google" target="_blank">讀書心得</a>
             <p>
                 <ul class="book2">
                     <li>紀錄平常閱讀書籍的心得。</li>
@@ -512,7 +521,8 @@
                 <div class="modal-body">
                   <h2>BandFinder(製作中)</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/0wire.PNG" alt="">
+                  <img class="img-fluid img-centered" src="img/portfolio/band-demo.jpg" alt="">
+                  
                   <h4>作品簡介：</h4>
                   <p>對於玩音樂的族群來說，要找到合適的樂團或是樂手一直是很大的問題。社群網站/論壇是目前找樂手/樂團的重要管道，但這些管道有以下幾個問題：<br>
                     <ol>
@@ -531,8 +541,8 @@
                      <li>Funtional map</li>
                      <li>Flow Chart</li>
                      <li>Wireframe</li>
-                     <li>Clickable Wireframe(Lofi Prototype)</li>
-                     <li>Prototype(製作中)</li>
+                     <li>Clickable Wireframe</li>
+                     <li>Prototype</li>
                  </ol>
                  <hr >
 
@@ -573,20 +583,111 @@
                   <img class="img-fluid img-centered" src="img/portfolio/bandfinder.png" alt="">
                   
                   <h4 class="text-center">Wireframe</h4>
+                  <img class="band" src="img/band/band prototype (1).png" alt="">
+                  <img class="band" src="img/band/band prototype (2).png" alt="">
+                  <img class="band" src="img/band/band prototype (3).png" alt="">
+                  <img class="band" src="img/band/band prototype (4).png" alt="">
+                  <img class="band" src="img/band/band prototype (5).png" alt="">
+                  <img class="band" src="img/band/band prototype (6).png" alt="">
+                  <img class="band" src="img/band/band prototype (7).png" alt="">
+                  <img class="band" src="img/band/band prototype (8).png" alt="">
+                  <img class="band" src="img/band/band prototype (9).png" alt="">
+                  <img class="band" src="img/band/band prototype (10).png" alt="">
+                  <img class="band" src="img/band/band prototype (11).png" alt="">
+                  <img class="band" src="img/band/band prototype (12).png" alt="">
+                  <img class="band" src="img/band/band prototype (13).png" alt="">
+                  <img class="band" src="img/band/band prototype (14).png" alt="">
+                <h4 class="text-center">Clickable Wireframe</h4>
+                <br>
+                <img class="imggif" src="img/portfolio/band001.gif" style="display:block; margin:auto;">
+                <br>
+                <img class="imggif" src="img/portfolio/band002.gif" style="display:block; margin:auto;">
+                  <ul class="list-inline item-details">
+                    <h4 class="text-center">Prototype</h4>
+                    <img class="band" src="img/band/band prototype (1).png" alt="">
+                    <img class="band" src="img/band/band prototype (2).png" alt="">
+                    <img class="band" src="img/band/band prototype (3).png" alt="">
+                    <img class="band" src="img/band/band prototype (4).png" alt="">
+                    <img class="band" src="img/band/band prototype (5).png" alt="">
+                    <img class="band" src="img/band/band prototype (6).png" alt="">
+                    <img class="band" src="img/band/band prototype (7).png" alt="">
+                    <img class="band" src="img/band/band prototype (8).png" alt="">
+                    <img class="band" src="img/band/band prototype (9).png" alt="">
+                    <img class="band" src="img/band/band prototype (10).png" alt="">
+                    <img class="band" src="img/band/band prototype (11).png" alt="">
+                    <img class="band" src="img/band/band prototype (12).png" alt="">
+                    <img class="band" src="img/band/band prototype (13).png" alt="">
+                    <img class="band" src="img/band/band prototype (14).png" alt="">
+<!--                     </li>
+                    <li>Date:
+                      <strong>
+                        <a href="http://startbootstrap.com">April 2014</a>
+                      </strong>
+                    </li>
+                    <li>Service:
+                      <strong>
+                        <a href="http://startbootstrap.com">Web Development</a>
+                      </strong>
+                    </li> -->
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal04" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>Gocha Dog</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/portfolio/dog01.jpg" alt="">
+                  <h4>遊戲連結：</h4><a href="http://lnk.pics/4HBBF" target="_blank">遊戲連結</a></h4>
+                  <h4>作品簡介：</h4>
+                  <p>
+                    此為資訊種子TUV專案之作品，在兩個月的時間內，選擇一個社會議題，作為目標。<br>
+                    我們都曾看過被棄養的流浪狗，但總是苦於心有餘而力不足，而沒有辦法改變什麼。
+                    在這個專案中，我們終於有機會為流浪狗的問題盡一份力，哪怕是只有一點點，我們也希望能為這個世界做出一些改變。
+                    我們決定以流浪狗議題做為我們要解決的問題，進而製作了這個網頁互動小遊戲，希望能以趣味的形式，將這個流浪狗的議題與常識，傳達給更多人。
+                    最後，我們的專案獲得了評審團大獎和人氣獎的殊榮。
+                    <br>
+                  </p>
+                  <h4>使用工具：</h4>
+                  <p>利用Mugeda進行遊戲製作。 </p>
+                  <h4>專案發想流程流程：</h4>
+                 <ol>
+                     <li>決定議題</li>
+                     <li>問題分析(邏輯樹)</li>
+                     <li>收斂問題</li>
+                     <li>決定解決方案</li>
+                     <li>製作遊戲</li>
+                     <li>檢視使用者回饋</li>
+                     <li>改良</li>
+                 </ol>
+                 <hr >
+                   <p><h4 class="text-center">User Story</h4>
+                    <p></p>
+                  <h4 class="text-center">Funtional map</h4>
+                    <p></p>
+                  </p>
+                  <h4 class="text-center">Flow Chart</h4>
+                  <img class="img-fluid img-centered" src="img/portfolio/bandfinder.png" alt="">
+                  
+                  <h4 class="text-center">Wireframe</h4>
                   <img class="band" src="img/band/iPhone 67 – 1.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 2.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 3.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 4.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 5.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 6.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 7.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 8.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 9.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 10.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 11.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 12.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 13.png" alt="">
-                  <img class="band" src="img/band/iPhone 67 – 14.png" alt="">
                 <h4 class="text-center">Clickable Wireframe</h4>
                 <br>
                 <img class="imggif" src="img/portfolio/band001.gif" style="display:block; margin:auto;">
@@ -918,14 +1019,22 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
+
+    <script src="jquery.2.min.js"></script>
+    <script src="jquery.mixitup.min.js"></script>
+    <script>
+        $('.row').mixItUp();
+    </script>
   </body>
 
 </html>

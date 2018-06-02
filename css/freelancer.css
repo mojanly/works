@@ -5,10 +5,58 @@
  */
 
 
+/* .wildimg {
+  margin: auto;
+  width: 600px;
+}
 
- body {
+.band {
+width: 111px;
+} */
+
+/*mix*/
+ .mixbtn ul{
+  text-align: center;
+}
+ .mixbtn li{
+  display: inline;
+  margin: 0 5px;
+  text-align: center;
+}
+ .mix{
+  display: none;
+  margin: 15px;
+}
+
+.mixbtn a{
+  color:#3D2D3D;
+  border: solid 7px white;
+  transition:all 0.5s;
+  text-decoration:none;
+}
+.mixbtn a:hover{
+  
+
+}
+.mixbtn a:focus{
+  color:white;
+  border: solid 7px  #C53E31;
+  border-radius: 3px;
+  background-color: #C53E31;
+}
+/* .mixbtn a:active{
+  color:#3D2D3D;
+  background-color: #C53E31;
+} */
+
+
+
+
+
+body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+}
 li{
   font-size: 20px;
 }
@@ -35,22 +83,22 @@ down{
 }
 
 h3{
-  font-family:微軟正黑體;
+  font-family:Noto Sans TC;
   font-weight:bold;
   color: #3D2D3D;
 }
 h2,h4{
-  font-family:微軟正黑體;
+  font-family:Noto Sans TC;
   font-weight:bold;
   color: #3D2D3D;
 }
 h5{
-  font-family:微軟正黑體;
+  font-family:Noto Sans TC;
   font-size: 24px;
   text-align: center;
   font-weight:bold;
   color: #3D2D3D;
-},
+}
 h6 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -91,8 +139,6 @@ hr.star-primary:after {
 
 .img-centered {
   margin: 0 auto; }
-
-
 
 .imggif {
   width: 270px;
@@ -208,6 +254,9 @@ header.masthead {
     font-size: 1.25em;
     font-weight: 300; }
 
+.control {
+  text-align: center;
+}    
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 200px;
@@ -220,15 +269,19 @@ header.masthead {
       font-size: 1.75em; } }
 
 #portfolio .portfolio-item {
-  right: 0;
-  margin: 0 0 15px; }
-
+  padding: 10px; 
+  /* background-color: #e8e8e8; */
+}
+  /*作品方框*/
   #portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
-    max-width: 400px;
-    margin: 0 auto;
-    cursor: pointer; }
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    cursor: pointer; 
+    border: 1px;
+  }
+    /*作品白色透明背景*/
     #portfolio .portfolio-item .portfolio-link .caption {
       position: absolute;
       width: 100%;
@@ -237,7 +290,6 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      /*作品白色透明背景*/
       background: rgba(255, 255, 255, 0.70); }
       #portfolio .portfolio-item .portfolio-link .caption:hover {
         opacity: 1; }
@@ -263,14 +315,16 @@ header.masthead {
         /*#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,*/
         #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
           margin: 0; }
-
+/*Z軸(圖層的概念)*/
 #portfolio * {
   z-index: 2; }
 
-@media (min-width: 767px) {
+@media (min-width: 300px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px; } }
 
+
+/*點進去後*/
 .portfolio-modal .modal-dialog {
   max-width: 100%;
   min-height: 100%;
@@ -482,6 +536,7 @@ footer {
     color: #C53E31;
     background-color: white; }
 
+/*社群按鈕*/
 .btn-social {
   font-size: 20px;
   line-height: 45px;
@@ -497,11 +552,6 @@ footer {
 .btn:focus {
   outline: none; }
 
-.wildimg {
-    margin: auto;
-    width: 600px;
- }
 
-.band {
-  width: 111px;
-}
+
+
