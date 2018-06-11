@@ -5,6 +5,9 @@
 
   <style>
     @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); 
+    
+    @import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway');
+
   .about{
     text-align: center;
     font-weight: bold;
@@ -31,15 +34,14 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
-
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Andy Chien的作品集</title>
+
+    <link rel="stylesheet" type="text/css" href="css/loading-bar.css"/> 
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -56,6 +58,8 @@
 
   <body id="page-top">
 
+      <div class="ldBar" data-value="50"></div>
+      <div id="myItem1"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -73,7 +77,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Note</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Blog</a>
               <li class="nav-item">
               <!-- <a class="nav-link js-scroll-trigger" href="blog/post.html">Read</a> -->
             </li>
@@ -88,7 +92,7 @@
       <div class="container">
         <img class="img-fluid" src="img/man.png" alt="">
         <div class="intro-text">
-          <span class="name">鏡像神經元</span>
+          <span class="name">Andy Chien</span>
           <hr class="star-light">
           <span class="skills">To be a User Interface Designer</span>
         </div>
@@ -101,7 +105,6 @@
         <h2 class="text-center">Portfolio</h2>
         <hr class="star-primary">
           <br>
-
 
           <div class="mixbtn">
               <ul>  
@@ -133,7 +136,19 @@
               <div class="caption">
                 <div class="caption-content">
                   <!--i class="fa fa-search-plus fa-3x"></i-->
-                  <h3>購物網站</h3>
+                  <h3>浩瀚宇宙遊戲購買平台</h3>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/web.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-sm-4 portfolio-item mix web">
+            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <!--i class="fa fa-search-plus fa-3x"></i-->
+                  <h3>資訊種子網站</h3>
                 </div>
               </div>
               <img class="img-fluid" src="img/portfolio/web.png" alt="">
@@ -253,14 +268,14 @@
         <hr class="star-light">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <div class="intr">
+            <div class="intro">
               什麼是鏡像神經元呢？<br>
               動物在執行或是觀察到其它個體動作時，大腦中有某些神經元的活性會增加，
               在腦中模仿、重現該動作或情緒，也就是所謂的「感同身受」，這些神經元就被稱為鏡像神經元。
                </div>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="intr">本網站以鏡像神經元為名，期望能秉持同理心，以使用者的角度，
+            <p class="intro">本網站以鏡像神經元為名，期望能秉持同理心，以使用者的角度，
               設計出符合他們需求的產品。
               未來這裡會持續更新有關UI/UX相關的學習筆記、學習資源，以及介面設計、平面設計、使用者研究的相關作品，
               敬請期待！
@@ -279,7 +294,7 @@
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <h2 class="text-center">Notes</h2>
+        <h2 class="text-center">Blog</h2>
         <hr class="star-primary">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -332,24 +347,24 @@
                 </li>
                 <li class="list-inline-item">
                   <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-google-plus"></i>
+                    <i class="fa fa-fw fa-medium"></i>
                   </a>
                 </li>
-                <li class="list-inline-item">
+                <!-- <li class="list-inline-item">
                   <a class="btn-social btn-outline" href="#">
                     <i class="fa fa-fw fa-twitter"></i>
                   </a>
-                </li>
+                </li> -->
                 <li class="list-inline-item">
                   <a class="btn-social btn-outline" href="#">
                     <i class="fa fa-fw fa-linkedin"></i>
                   </a>
                 </li>
-                <li class="list-inline-item">
+                <!-- <li class="list-inline-item">
                   <a class="btn-social btn-outline" href="#">
                     <i class="fa fa-fw fa-dribbble"></i>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="footer-col col-md-4">
@@ -364,7 +379,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              Copyright &copy; Andy Chien 2017
+              Copyright &copy; Andy Chien 2018
             </div>
           </div>
         </div>
@@ -380,18 +395,22 @@
 
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      
       <div class="modal-dialog" role="document">
         <!-- 以下才是內容 -->
+        
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">    <!-- 叉叉符號 -->
+            
             <div class="lr">
               <div class="rl"></div>
             </div>
           </div>
           <div class="container">
-
+            
                 
             <div class="row">
+                
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>1000樓電梯之控制介面設計</h2>
@@ -413,10 +432,10 @@
                   <li>Mockup</li>
                   <li>Prototype</li>
                 </ol>
-
+                
                   <hr>
                 <img class="img-fluid img-centered" src="img/portfolio/06.png" alt="">
-                <img class="img-fluid img-centered" src="img/portfolio/07.png" alt="">
+                <img class="sma img-fluid img-centered sma" src="img/portfolio/07.png" alt="">
                 <h4 class="text-center">Flow Chart</h4>
                 <img class="img-fluid img-centered" src="img/portfolio/Elevatorchart.png" alt="">
                 <h4 class="text-center">Mockup</h4>
@@ -467,20 +486,30 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2>購物網站</h2>
+                  <h2>浩浩宇宙遊戲購買平台</h2>
                   <hr class="star-primary">
                   <img class="img-fluid img-centered" src="img/portfolio/game.png" alt="">
                   <h4>作品簡介：</h4>
-                    <p>這是大學資料庫概論課程的的作品，利用Html+Css+PHP+MySQL，實作一個遊戲購物網站，包含檢索、購物車、會員功能、留言板。 
-                     由於當時的技術能力有限，部份功能無法用很完美的方式在前端呈現，例如購物車等功能。<br>
-                    也因為這次的經驗，讓我體認到技術問題的重要性，並非所有的設計都能完美的實作、
-                    必須要在網頁視覺設計和程式碼實作可行性之間取得一個平衡。</p>
+                    <p>資料庫概論課程作品，利用PHP語言實作一個遊戲購物網站，包含所有購物網站的基本功能：檢索、購物車、會員系統、留言板。
+                    </p>
                     <br>
-                    <h4>使用工具：</h4>
-                    <p>Html+Css+PHP+MySQL。<br>
+                    <h4>使用技術：</h4>
+                    <p>
+                      <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                      </ul>
+
                     </p>
                     <h4>負責工作：</h4>
-                    <p>網頁前端、MySQL資料建置、與負責後端的組員討論實作可行性。<br>
+                    <ul>
+                        <li>網頁前端建置</li>
+                        <li>MySQL資料建置</li>
+                        <li>與後端人員協調</li>
+                    </ul>
+                    <p>
                       <a href="http://163.13.175.7/104db/104dbb/104dbb12/index.html" target="_blank">網站連結</a>
                     </p>
                     
@@ -1029,12 +1058,18 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
-
+    <!-- MixItUp -->
     <script src="jquery.2.min.js"></script>
     <script src="jquery.mixitup.min.js"></script>
     <script>
         $('.row').mixItUp();
     </script>
+    <!-- loading-bar -->
+    <script type="text/javascript" src="js/loading-bar.js"></script>
+    <script>
+     var bar1 = new ldBar("#myItem1"); var bar2 = document.getElementById('myItem1').ldBar; bar1.set(60); 
+    </script>
+
   </body>
 
 </html>
