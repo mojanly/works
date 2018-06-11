@@ -41,7 +41,9 @@
 
     <title>Andy Chien的作品集</title>
 
-    <link rel="stylesheet" type="text/css" href="css/loading-bar.css"/> 
+    <div id="overlay">
+        <div class="spinner"></div> 
+    </div>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -58,8 +60,7 @@
 
   <body id="page-top">
 
-      <div class="ldBar" data-value="50"></div>
-      <div id="myItem1"></div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -269,16 +270,12 @@
         <div class="row">
           <div class="col-lg-4 ml-auto">
             <div class="intro">
-              什麼是鏡像神經元呢？<br>
-              動物在執行或是觀察到其它個體動作時，大腦中有某些神經元的活性會增加，
-              在腦中模仿、重現該動作或情緒，也就是所謂的「感同身受」，這些神經元就被稱為鏡像神經元。
+              Hi，我是Andy，<br>
+
                </div>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="intro">本網站以鏡像神經元為名，期望能秉持同理心，以使用者的角度，
-              設計出符合他們需求的產品。
-              未來這裡會持續更新有關UI/UX相關的學習筆記、學習資源，以及介面設計、平面設計、使用者研究的相關作品，
-              敬請期待！
+            <p class="intro">
             </p>
           </div>
           <div class="col-lg-8 mx-auto text-center">
@@ -1065,9 +1062,12 @@
         $('.row').mixItUp();
     </script>
     <!-- loading-bar -->
-    <script type="text/javascript" src="js/loading-bar.js"></script>
     <script>
-     var bar1 = new ldBar("#myItem1"); var bar2 = document.getElementById('myItem1').ldBar; bar1.set(60); 
+      var overlay = document.getElementById("overlay");
+
+      window.addEventListener('load', function(){
+      overlay.style.display = 'none';
+    })
     </script>
 
   </body>
