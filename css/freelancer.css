@@ -3,6 +3,14 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+.high{
+  /* height: 1px; */
+  width: 50%;
+  border:none;
+  border-top: 4px solid white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .resume{
   margin-top: 60px;
 }
