@@ -50,7 +50,7 @@ iframe{
   margin-bottom: 40px;
 }
 hr{
-  border-top:1px solid #555555;
+  border-top:0.5px solid #555555;
   margin-top: 70px;
   margin-bottom: 70px;
 }
@@ -142,18 +142,26 @@ iframe{
 }
 /*-----------------------------------------------------------*/
 
+.gray{
+  background-color: #fff;
+}
 
 
 body {
   font-family: 'Noto Sans CJK TC','Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: Thin;
+  font-weight: 400;
+  
+  color: #404040;
   overflow-x: hidden; 
 }
 li{
-  font-size: 20px;
+  font-size: 16px;
+  /* font-family: 微軟正黑體; */
 }
 p {
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  /* font-family: 微軟正黑體; */
   
  }
 
@@ -181,11 +189,20 @@ h3{
   font-weight:bold;
   color:  black;
 }
-h2,h4{
+h2{
   font-family:'Noto Sans TC';
   font-weight:bold;
-  color:  black;
+  color:  #404040;
 }
+h4{
+  font-family:'Noto Sans TC';
+  font-weight:600;
+  color:  #404040;
+}
+.h4br{
+  margin:40px;
+}
+
 h5{
   font-family:'Noto Sans TC';
   font-size: 24px;
@@ -195,7 +212,7 @@ h5{
 }
 h6 {
   font-family: 'Noto Sans CJK TC';
-  font-weight: 300;
+  font-weight: 100;
   text-transform: uppercase; }
 
 hr.star-light,
@@ -341,10 +358,12 @@ section.success {
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
       color: white;
       border-radius: 5px;
-      background: #6900ff; }
+      background: #6900ff; 
+    }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
         color: white;
-        background: #6900ff; }
+        background: #6900ff; 
+      }
   #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 5px;
@@ -353,19 +372,19 @@ section.success {
       font-size: 1.5em; } }
 
 
-    
+
 header.masthead {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  height: 600px;
+  /* padding-top: 100px;
+  padding-bottom: 50px; */
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: white;
-  background: #8E2DE2;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #232526, #414345);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-size: cover;
+  height: 100vh;
   /* background-image: url('../img/max.png'); */
-  background-size: 100% auto;
  }
 
   header.masthead img {
@@ -394,7 +413,7 @@ header.masthead {
     padding-bottom: 100px; }
     header.masthead .intro-text .name {
       font-size: 4.75em;
-      padding-top: 30px;
+      /* padding-top: 30px; */
       /* font-family: 'Merriweather'; */
      }
     header.masthead .intro-text .skills {
@@ -473,6 +492,9 @@ header.masthead {
   z-index: 2; }
 
 @media (min-width: 300px) {
+  header.masthead {
+    padding-top: 200px;
+   }
   #portfolio .portfolio-item {
     margin: 0 0 30px; } }
 
