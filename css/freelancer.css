@@ -141,7 +141,7 @@ iframe{
   font-size: 20px;
   padding-top: 30px;
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
   .mixbtn a{
     border: solid 0px white;
   }
