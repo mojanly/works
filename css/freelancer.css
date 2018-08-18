@@ -7,6 +7,10 @@
 iframe{
   border: 1px solid;
 }
+.picshadow{
+  box-shadow:3px 3px 12px gray;padding:3px;
+}
+/*三張圖*/
 .pic{
   display: -webkit-flex;
   display: -moz-flex;
@@ -31,7 +35,8 @@ iframe{
   align-items: center;
   background: white;
 }
-
+/*------------------*/
+/*about區塊的上下兩片*/
 .wave-top{
   margin-top: 1px;
   display: block;
@@ -55,6 +60,7 @@ iframe{
   margin-top: -1px;
   z-index: 9999;
 }
+/*-----------------------------*/
 
 /*-------H2底下的小橫線---------*/
 .high{
@@ -206,7 +212,8 @@ iframe{
 
 
 body {
-  font-family: 'Noto Sans CJK TC','Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-family: 'Noto Sans CJK TC','Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: 'Noto Sans TC';
   font-weight: 400;
   
   color: #404040;
