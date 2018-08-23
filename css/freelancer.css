@@ -3,6 +3,9 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+.nomargin{
+  margin-left: 0;
+}
 .svgcenter{
   display: block;
   margin: auto;
@@ -228,7 +231,8 @@ li{
 }
 p {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 30px;
+  
   /* font-family: 微軟正黑體; */
   
  }
@@ -452,12 +456,12 @@ header.masthead {
   padding: 0;
   text-align: center;
   color: white;
-  background: -webkit-linear-gradient(to right, #232526, #414345);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   height: 100vh;
   background-color: #000000;
-  background-image: url(../black-linen-2-1920x1080.png);
+  background-image: url(../head.svg);
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   background-attachment: fixed;
  }
