@@ -58,10 +58,10 @@ section#blog{
   margin-left: 0;
 }
 
-.svgcenter{
+/* .svgcenter{
   display: block;
   margin: auto;
-}
+} */
 .iframe-border{
   border: 1px solid #404040;
 }
@@ -382,7 +382,9 @@ hr.star-primary:after {
   background-color: white; }
 
 .img-centered {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: block;
+ }
 
 .imggif {
   width: 40%;
