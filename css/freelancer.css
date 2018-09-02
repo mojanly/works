@@ -769,7 +769,7 @@ footer {
   
   .btn-cta.active, .btn-cta:active, .btn-cta:focus, .btn-cta:hover {
     color: white;
-    border: 1px solid #F2A147;
+    border: 1px solid rgb(255, 194, 125);
     background: rgb(255, 194, 125);
   }
 
