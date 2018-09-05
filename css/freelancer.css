@@ -230,25 +230,43 @@ iframe{
 }
 
 .mixbtn a{
+  position: relative;
   color: #404040;
   font-size: 20px;
   border: solid 7px white;
   transition: all 0.5s;
   text-decoration: none;
 }
-.mixbtn a:hover{
+/*底線動畫*/
+.mixbtn a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #4A00E0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mixbtn a:hover:before{
   color: #4A00E0;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+
 }
 .mixbtn a:focus{
-  color:white;
-  border: solid 7px  #4A00E0;
-  border-radius: 5px;
-  background-color: #4A00E0;
+  visibility: visible;
 }
-/* .mixbtn a:active{
-  color: black;
-  background-color: #4A00E0;
-} */
+ .mixbtn a:active{
+  /* color: black;
+  background-color: #4A00E0; */
+}
 
 .row .intro{
   font-family: 'Noto Sans CJK TC' 'Thin';
