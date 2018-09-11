@@ -116,7 +116,6 @@ section#blog{
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -1px;
-  z-index: 9999;
 }
 /*-----------------------------*/
 
@@ -207,12 +206,6 @@ iframe{
 
 }
 
-.bolcol{
-  background-color:blueviolet;
-  width: 100%;
-  height: 200px;
- }
-
 /*mix*/
  .mixbtn ul{
   text-align: center;
@@ -231,40 +224,43 @@ iframe{
   margin: 15px;
 }
 
-.mixbtn a{
+.mixa{
   position: relative;
   color: #404040;
   font-size: 20px;
-  /* border: solid 7px white; */
-  transition: all 0.5s;
   text-decoration: none;
-  
 }
-/*底線動畫*/
-.mixbtn a:before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: -2px;
-  background: #4A00E0;
-  height: 2px;
-  transition-property: left right;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+.mixa:hover{
+  text-decoration: none;
 }
-
-.mixbtn a:hover:before{
-  right: 0;
-
-}
-.mixbtn li.active a{
+/* .mixbtn li.active a{
   color: #4A00E0;
   border-style: solid;
   border-color: #4A00E0;
   border-width: 0px 0px 2px 0px;
+} */
+
+/*底線動畫*/
+.mixa:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 0;
+  bottom: -5px;
+  background: #4A00E0;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
+.mixa:hover:after,
+.mixa:focus:after,
+.mixa:active:after{
+  right:0;
+  width: 100%;
+}
+
 
 .row .intro{
   font-family: 'Noto Sans CJK TC' 'Thin';
@@ -314,7 +310,8 @@ a:active,
 a:focus,
 a:hover {
   color: #4A00E0;
-  outline: none; }
+  outline: none; 
+}
 
 h1,
 
