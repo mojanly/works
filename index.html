@@ -69,8 +69,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.css" rel="stylesheet">
-
-
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
   </head>
 
   <body id="page-top">
@@ -116,6 +115,11 @@
         </div>
       </div>
     </header>
+
+
+
+
+
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
@@ -555,6 +559,8 @@
       </div>
     </footer>
 
+    
+
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top d-lg-none">
       <a class="btn btn-primary js-scroll-trigger" href="#page-top">
@@ -563,23 +569,56 @@
     </div>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
       
       <div class="modal-dialog" role="document">
         <!-- 以下才是內容 -->
+
+            <!-- <div class="fix-element">This div should be fixed<br>and should not scroll away.</div> -->
+
+        <nav id="cd-vertical-nav" >
+            <ul>
+               <li>
+                  <a href="#section1" data-number="1">
+                     <span class="cd-dot"></span>
+                     <span class="cd-label">Persona</span>
+                  </a>
+               </li>
+               <li>
+                 <a href="#section1" data-number="2">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Information Architecture</span>
+                 </a>
+              </li>
+              <li>
+               <a href="#section1" data-number="3">
+                  <span class="cd-dot"></span>
+                  <span class="cd-label">Wireframe</span>
+               </a>
+             </li>
+             <li>
+               <a href="#section1" data-number="4">
+                  <span class="cd-dot"></span>
+                  <span class="cd-label">Mockup(Visual Design)</span>
+               </a>
+             </li>
+             <li>
+               <a href="#section1" data-number="5">
+                  <span class="cd-dot"></span>
+                  <span class="cd-label">對比圖</span>
+               </a>
+             </li>
+            </ul>
+         </nav>
         
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">    <!-- 叉叉符號 -->
-            
             <div class="lr">
               <div class="rl"></div>
             </div>
           </div>
-          <div class="container">
-            
-                
-            <div class="row">
-                
+          <div class="container">  
+            <div class="row"> 
               <div class="col-lg-11 mx-auto">
                 <div class="modal-body">
                   <h2>LearnMode學習吧Redesign</h2>
@@ -604,7 +643,7 @@
                           </ol>
                           <h4>Process</h4>
                           <ol>
-                            <li>persona</li>
+                            <li>Persona</li>
                             <li>Information Architecture</li>
                             <li>Wireframe</li>
                             <li>Mockup(Visual Design)</li>
@@ -615,7 +654,7 @@
                   </div>
 
 
-                
+       
                 <hr>
                 <div class="col-lg-8 mx-auto">
                 <h4 class="text-center">Persona</h4>
@@ -649,7 +688,7 @@
                 <div class="col-lg-5 mx-auto">
                     <p style="font-weight: 600;">修改後<br></p><p>
                     我在詳細檢視網站架構後，大致掌握網站所提供的各式多媒體資源，並以使用者任務導向的方式，重新設計了網站的側導覽列如下：</p>
-                    <img class="svgcenter img-fluid img-centered" src="img/learnmode/newIA.JPG" alt="">
+                    <img class="svgcenter img-fluid img-centered" style="width: 169px;" src="img/learnmode/newIA.svg" alt="">
                 </div>
                 <div class="col-lg-8 mx-auto">
                   
@@ -708,65 +747,54 @@
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/class.svg" alt="">
               <h5 class="text-center">複習</h5>
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/review.svg" alt="">
-              <h4 class="text-center">獎勵機制說明頁面</h4>
+              <h5 class="text-center">獎勵機制說明頁面</h5>
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/reward.svg" alt="">
 
 
               <br><br><br>
-              <h4 class="text-center">對比圖</h4>
-              <p style="font-weight: 600;">Landing Page<br></p>
+              <h4 class="text-center">對比圖</h4><br><br>
+              <h5 style="font-weight: 700;">Landing Page<br></h5>
               <div class="row">
                 <div class="col-lg-6 mx-auto">
-                  <p style="">修改前<br></p>
+                  <p class="text-center">修改前<br></p>
                   <img class="svgcenter img-fluid img-centered" src="img/learnmode/old-lp.png" alt="">
                 </div>
                 <div class="col-lg-6 mx-auto">
-                  <p style="">修改後<br></p>
+                  <p class="text-center">修改後<br></p>
                   <img class="svgcenter img-fluid img-centered" src="img/learnmode/landing-page.svg" alt="">
                 </div>
               </div>
-              <p style="font-weight: 600;">初始頁面<br></p>
+              <br>
+              <h5 style="font-weight: 700;">初始頁面<br></h5>
               <div class="row">
                 <div class="col-lg-6 mx-auto">
-                  <p style="">修改前<br></p>
+                  <p class="text-center">修改前<br></p>
                   <img class="svgcenter img-fluid img-centered" src="img/learnmode/preview-old.png" alt="">
                 </div>
                 <div class="col-lg-6 mx-auto">
-                  <p style="">修改後<br></p>
+                  <p class="text-center">修改後<br></p>
                   <img class="svgcenter img-fluid img-centered" src="img/learnmode/preview-pro.svg" alt="">
                 </div>
               </div>
-              <p style="font-weight: 600;">搜尋頁面<br></p>
+              <br>
+              <h5 style="font-weight: 700;">搜尋頁面<br></h5>
               <div class="row">
                 <div class="col-lg-6 mx-auto">
-                  <p style="">修改前<br></p>
+                  <p class="text-center">修改前<br></p>
                   <img class="svgcenter img-fluid img-centered" src="img/learnmode/old-search.JPG" alt="">
                 </div>
                 <div class="col-lg-6 mx-auto">
-                  <p style="">修改後<br></p>
+                  <p class="text-center">修改後<br></p>
                   <img class="svgcenter img-fluid img-centered" src="img/learnmode/search.svg" alt="">
                 </div>
               </div>
               
-            
-
-                    <!--a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!-->
-                  <ul class="list-inline item-details">
-<!--                     <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.co">April 2017</a>
-                      </strong>
-                    </li>
-                    <li>Type:
-                      <strong>
-                        <a href="http://startbootstrap.co">Mobile UI/UX Design</a>
-                      </strong>
-                    </li> -->
-                  </ul>
+                  <ul class="list-inline item-details"></ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Close</button>
                   </div>
+
                 </div>
                 </div>
               </div>
@@ -776,7 +804,7 @@
       </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       
       <div class="modal-dialog" role="document">
         <!-- 以下才是內容 -->
@@ -877,7 +905,7 @@
       </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -943,7 +971,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1006,7 +1034,7 @@
       </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1108,7 +1136,7 @@
       </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1231,7 +1259,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal04" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal04" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1360,7 +1388,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1415,7 +1443,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1468,7 +1496,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1519,7 +1547,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1570,7 +1598,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1622,7 +1650,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -1683,6 +1711,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
 
     <!-- MixItUp -->
     <script src="jquery.2.min.js"></script>
