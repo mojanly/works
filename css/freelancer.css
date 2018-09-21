@@ -3,6 +3,10 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+#mind-map{
+  background-color: #f3f3f3;
+}
+
 /*swiper*/
 .swiper-container {
   width: 100%;
@@ -13,7 +17,7 @@
     width: 800px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #f3f3f3;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +44,9 @@
   height: 5px;
 }
 .card{
-  /* border: 1px solid black; */
+  border: 0px solid black;
+  border-radius: 12px;
+  
 }
 /*swiper*/
 
