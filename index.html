@@ -67,10 +67,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <!-- Custom styles for this template -->
     <link href="css/freelancer.css" rel="stylesheet">
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
-  </head>
+    </head>
 
   <body id="page-top">
 
@@ -95,7 +96,7 @@
               <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#mind-map">Other</a>
+              <a class="nav-link js-scroll-trigger" href="#mind-map">Learning</a>
             </li>
             
           </ul>
@@ -325,8 +326,9 @@
     <!-- Contact Section -->
     <section id="about">
       <div class="container">
-          <h2 class="text-center">Personality</h2>
-          <hr class="highsho">
+          <h2 class="text-center">Personality</h2><br>
+          <h3 class="text-center" style="color: #888888">Why you should choose me?</h3>
+          <!-- <hr class="highsho"> -->
           <br>
           <div class="row">
             <div class="col-sm-4">
@@ -334,9 +336,9 @@
                     <div class="box"><img class="img-fluid img-centered" src="img/index/undraw_digital_nomad_9kgl.svg" alt=""></div>
                 </div>
               <div class="text-center">
-                  <h4>做自己人生的設計師</h4>
+                  <h4>豐富的產業知識</h4>
                   <p>
-                    在大學實際做過近十種產業的工讀/實習，快速嘗試人生的prototype、快速修正、快速疊代。擅長站在不同的產業與角度來思考問題。
+                    在大學做過近十種不同產業的工讀/實習，快速嘗試人生的prototype，唯有在該產業/領域待過，才能了解其中的處境與痛點，用不同的角度來思考問題。
                   </p>
               </div>
             </div>
@@ -346,9 +348,9 @@
                   <div class="box"><img class="img-fluid img-centered" src="img/index/undraw_static_assets_rpm6.svg" alt=""></div>
               </div>
                 <div class="text-center">
-                    <h4>懂技術</h4>
+                    <h4>懂技術且專注在解決問題</h4>
                     <p>
-                      我曾實際參與開發、了解技術上的挑戰與與困難。專注在problem-solving，不只是天馬行空，能兼具UX、實作性、商業性。
+                      我曾實際參與開發、了解技術上的挑戰與與困難。專注在設計的核心(problem-solving)，能兼具使用體驗、實作性、商業性，而不是天馬行空或產出炫砲的視覺。
                     </p>
                 </div>
             </div>
@@ -358,9 +360,9 @@
                     <div class="box"><img class="img-fluid img-centered" src="img/index/undraw_reading_list_4boi.svg" alt=""></div>
                 </div>
                 <div class="text-center">
-                    <h4>跨領域能力</h4>
+                    <h4>在設計中大量應用心理學</h4>
                     <p>
-                        經由自學與大量閱讀，接觸多領域的知識，包括心理學(設計心理學、行為科學、決策科學)、網路行銷等等，能應用在產品上，建構出更全面的使用體驗。
+                        經由自學與大量閱讀，接觸了心理學、行為科學、決策科學、腦神經行銷等知識，並能應用在產品上，建構出更全面的使用體驗。
                     </p>
                 </div>
             </div>
@@ -400,113 +402,60 @@
           <div class="container">
             <h2 class="text-center">Now Learning</h2>
             <hr class="highsho">
-            <br>
-            <br>
-            <br>
-            <!-- <hr class="star-primary"> -->
-            <div class="row">
-              <div class="col-lg-5 mx-auto">
-                  <h3 class="text-center">SEO架構圖</h3><br>
-                <p class=""><span style="font-size: 20px;">SEO(搜尋引擎優化)，是一個很大的議題，包含技術層面與網站內容層面，需要行銷人員和技術人員都具備相關的知識並共同協作，才能架構出一個全面性的網站。
-                  因此，我製作了這個心智圖，包含整個SEO的架構，能夠幫助SEO的學習者快速的了解學習的路徑與地圖，並且專注在其所需的部分。<br>
-                  <span style="font-size: 12px;">參考資料：Harris部落格以及其他網路資源</span></p>
-                <br>
-                <div class="text-center">
-                    <a href="https://www.xmind.net/m/wWsX/" class="btn-cta text-center btn btn-lg ">
-                        來去看看
-                        <i class="fas fa-arrow-right"></i>
-                      </a>
-                 </div>
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-              </div>
-              <div class="col-lg-5 mx-auto">
-                  <iframe src='https://www.xmind.net/embed/wWsX/' width='100%' height='110%' frameborder='0' scrolling='no'></iframe>
-              </div>
-            </div>
+
+            <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card" style="width: 18rem;">
+          <!-- <img class="card-img-top h-25" src="img/index/HCI.PNG" alt="Card image cap"> -->
+          <div class="card-body">
+            <h4 class="card-title">SEO架構圖</h4>
+            <p class="card-text">SEO(搜尋引擎優化)，是一個很大的議題，包含技術層面與網站內容層面，需要行銷人員和技術人員都具備相關的知識並共同協作，才能架構出一個全面性的網站。
+              因此，我製作了這個心智圖，包含整個SEO的架構，能夠幫助SEO的學習者快速的了解學習的路徑與地圖，並且專注在其所需的部分。</p>
+            <a href="https://www.xmind.net/m/wWsX/" class="btn btn-primary">來去看看</a>
           </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card" style="width: 18rem;">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <h4 class="card-title">HCI心智圖(建構中)</h4>
+            <p class="card-text">HCI(Human-Computer Interaction)又稱為人機互動，是UI/UX前身，是一門研究人與電腦互動的學門。這是我在學習Georgia Tech在Udacity的MOOCs的課程，我將課程內容整理成心智圖。</p>
+            <a href="http://www.xmind.net/m/8ypA" class="btn btn-primary">來去看看</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card" style="width: 18rem;">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <h4 class="card-title">Gamification心智圖(建構中)</h4>
+            <p class="card-text">Gamification(遊戲化)是一門研究如何強化人們使用一個產品之動機/動力的學門。在設計產品時，若有滿足所謂的"八角動機"，就能有效加深使用者對這個產品的忠誠度。</p>
+            <a href="http://www.xmind.net/m/L2N7" class="btn btn-primary">來去看看</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card" style="width: 18rem;">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <h4 class="card-title">IOS HIG(建構中)</h4>
+            <p class="card-text">IOS Human Interface Guidelines是UI設計師必讀的設計原則之一，內容大量揭示了許多"應該做"與"不該做"的事。我製作了這個心智圖，並將重點跟較常忽略的原則標註起來，方便在設計時檢視，確保有遵守原則。</p>
+            <a href="https://www.xmind.net/m/6Fy4/" class="btn btn-primary">來去看看</a>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+            
         </section>
-
-
-        <!-- Contact Section -->
-        <section id="contact">
-          <div class="container">
-            <br>
-            <!-- <hr class="star-primary"> -->
-            <div class="row">
-              <div class="col-lg-5 mx-auto">
-                  <iframe src='https://www.xmind.net/embed/L2N7/' width='100%' height='100%' frameborder='0' scrolling='no'></iframe>
-              </div>
-              <div class="col-lg-5 mx-auto">
-                  <h3 class="text-center">Gamification心智圖(建構中)</h3><br>
-                <p class=""><span style="font-size: 20px;">Gamification(遊戲化)是一門研究如何強化人們做某件事/使用某件產品動力的學門，在設計產品時，若有滿足所謂的"八角動機"，就能有效加深使用者對這個產品的忠誠度。<br>
-                  <span style="font-size: 12px;">參考資料：Gamification & Behavioral Design: The Octalysis Framework課程</span></p>
-                <br>
-                <div class="text-center">
-                    <a href="http://www.xmind.net/m/L2N7" class="btn-cta text-center btn btn-lg ">
-                      <i class="fas fa-arrow-left"></i>  
-                      來去看看
-                      </a>
-                 </div>
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="mind-map">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5 mx-auto">
-                  <h3 class="text-center">IOS HIG(建構中)</h3><br>
-                <span style="font-size: 20px;">IOS Human Interface Guidelines是UI設計師必讀的設計原則之一，內容大量揭示了許多"應該做"與"不該做"的事。我製作了這個心智圖，並將重點跟較常忽略的原則標註起來，方便在設計時檢視，確保有遵守原則。</span><br>
-                  <span style="font-size: 12px;">參考資料：apple的human interface guidelines網站</span></p>
-                <br>
-                <div class="text-center">
-                    <a href="https://www.xmind.net/m/6Fy4/" class="btn-cta text-center btn btn-lg ">
-                        來去看看
-                        <i class="fas fa-arrow-right"></i>
-                      </a>
-                 </div>
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-              </div>
-              <div class="col-lg-5 mx-auto">
-                  <iframe src='https://www.xmind.net/embed/6Fy4' width='100%' height='110%' frameborder='0' scrolling='no'></iframe>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-          <div class="container">
-            <br>
-            <!-- <hr class="star-primary"> -->
-            <div class="row">
-              <div class="col-lg-5 mx-auto">
-                  <iframe src='https://www.xmind.net/embed/8ypA/' width='100%' height='100%' frameborder='0' scrolling='no'></iframe>
-              </div>
-              <div class="col-lg-5 mx-auto">
-                  <h3 class="text-center">HCI心智圖(建構中)</h3><br>
-                <p class=""><span style="font-size: 20px;">HCI(Human-Computer Interaction)又稱為人機互動，是UI/UX前身，是一門研究人與電腦互動的學門。這是我在學習Georgia Tech在Udacity的MOOCs的課程，我將課程內容整理成心智圖。<br>
-                  <span style="font-size: 12px;">參考資料：https://www.udacity.com/course/human-computer-interaction--ud400</span></p>
-                <br>
-                <div class="text-center">
-                    <a href="http://www.xmind.net/m/8ypA" class="btn-cta text-center btn btn-lg ">
-                      <i class="fas fa-arrow-left"></i>  
-                      來去看看
-                      </a>
-                 </div>
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-              </div>
-            </div>
-          </div>
-        </section>    
-
 
     <!-- Footer -->
     <footer class="text-center">
@@ -1713,6 +1662,7 @@
     <script src="js/freelancer.min.js"></script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 
     <!-- MixItUp -->
     <script src="jquery.2.min.js"></script>
@@ -1731,6 +1681,25 @@
       overlay.style.display = 'none';
     })
     </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var appendNumber = 4;
+    var prependNumber = 1;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
     <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 

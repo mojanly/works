@@ -3,16 +3,47 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+/*swiper*/
+.swiper-container {
+  width: 100%;
+  height: 450px;
+  margin: 20px auto;
+}
+.swiper-slide {
+    width: 800px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.card-text{
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+}
+.color-btn{
+  background-color: #4A00E0;
+}
+.card-img-top{
+  height: 5px;
+}
+.card{
+  /* border: 1px solid black; */
+}
+/*swiper*/
 
-
-
-/* .fix-element{
-  z-index:9999;
-  position:fixed !important;
-  top:40px;
-  left:40px;
-  background-color:red;
-} */
 /*側邊的圓點點*/
 .cd-nav-trigger {
   display: none;
@@ -899,7 +930,11 @@ footer {
   transition: all 0.2s ease-in-out;
   color: white;
   background: #F2A147;
-  border: 1px solid #F2A147;}
+  border: 1px solid #F2A147;
+}
+.btn-bottom{
+  margin-bottom: 0px;
+}
   
   .btn-cta.active, .btn-cta:active, .btn-cta:focus, .btn-cta:hover {
     color: white;
@@ -923,28 +958,28 @@ footer {
 .btn-primary {
   font-weight: 700;
   color: white;
-  border-color:  black;
-  background-color:  black; }
+  border-color:  #4A00E0;
+  background-color:  #4A00E0; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
-    border-color: black;
-    background-color: #1a252f; }
+    border-color: #2e008c;
+    background-color: #2e008c; }
   .btn-primary:hover {
     color: white;
-    border-color: #161f29;
-    background-color: #1a252f; }
+    border-color: #671cff;
+    background-color: #671cff; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    border-color: #161f29;
-    background-color: #1a252f; }
+    border-color: #2e008c;
+    background-color: #2e008c; }
     .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle:hover {
       color: white;
-      border-color: black;
-      background-color: #0d1318; }
+      border-color: #2e008c;
+      background-color: #2e008c; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
