@@ -514,6 +514,10 @@
   </div> 
 </div>
 
+
+
+
+
             
         </section>
 
@@ -566,6 +570,7 @@
           </div>
         </div>
       </div>
+
     </footer>
 
     
@@ -625,6 +630,11 @@
             </div>
           </div>
           <div class="container">  
+              <div class="scroll-top">
+                  <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+              </div>
             <div class="row"> 
               <div class="col-lg-11 mx-auto">
                 <div class="modal-body">
@@ -638,7 +648,14 @@
                       <div class="col-lg-8 mx-auto">
                           <h4>Overview</h4>
                           <p>
-                            此專案是面試LearnMode學習吧UIUX設計師工作時，面試官出的作業。針對「LearnMode學習吧」這個E-learning平台現階段使用者面臨的痛點與網站架構問題，思考解決方案並重新設計。<br>
+                            此專案是面試LearnMode學習吧UIUX設計師工作時，面試官出的作業。<span style="font-weight: 700">針對「LearnMode學習吧」這個E-learning平台現階段使用者面臨的痛點與網站架構問題，思考解決方案並重新設計。<br>
+                            此專案Redesign有三個重點：
+                            <ol>
+                              <li><a class="color-none" href="#ia">將原先「功能導向」的網站架構改為以「使用者任務」為導向的設計</a></li>
+                              <li><a class="color-none" href="#class-design">在課程設計頁面容入了遊戲化設計，欲解決國中小生對學習動力不足的問題</a></li>
+                              <li><a class="color-none" href="#landing-page">在Landing Page加入了大量文案與行銷心理學的技巧</a></li>
+                            </ol>
+                          </span>
                             <br> LearnMode學習吧平台簡介：學習吧是一個開放與共享的公益教育平臺，主要目的有二：1.透過科技縮減城鄉差距與數位落差。2.針對不同孩子的學習狀況給予最適當的幫助。主要使用者為國小、國中、高中之學生與老師，目前有超過40萬的註冊人數，以及10萬筆以上的數位教育資源(包括：課本、影片、試卷等)。
                           </p>
                       </div>
@@ -671,36 +688,36 @@
                 </div>
 
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/persona.svg" alt="">
-              
-              <h4 class="text-center">Information Architecture</h4>
-              <br>
-              <div class="row">
-                  <div class="col-lg-8 mx-auto">
-                    <p>LearnMode學習吧擁有非常豐富的多媒體教育資源，不過現行網頁的資訊架構有一個最大的問題：
-                      <span style="font-weight:600;">那就是將所有的資源全部攤開來，一次放在使用者面前，如此容易讓使用者感到困惑、不知道該從何處著手，而且並不是以使用者任務為導向的設計。</span><br><br>
-                    </p>
-                    <p>為了解決這個問題，我根據上面的Persona，並且依照使用者任務導向來思考，產出了資訊架構如下：</p><br>
+              <div id="ia">
+                  <h4 class="text-center">Information Architecture</h4>
+                  <br>
+                  <div class="row">
+                      <div class="col-lg-8 mx-auto">
+                        <p>LearnMode學習吧擁有非常豐富的多媒體教育資源，不過現行網頁的資訊架構有一個最大的問題：
+                          <span style="font-weight:600;text-decoration:underline;">那就是將所有的資源全部攤開來，一次放在使用者面前，如此容易讓使用者感到困惑、不知道該從何處著手，而且並不是以使用者任務為導向的設計。</span><br><br>
+                        </p>
+                        <p>為了解決這個問題，我根據上面的Persona，並且依照使用者任務導向來思考，產出了資訊架構如下：</p><br>
+                      </div>
+                      <img class="svgcenter img-fluid img-centered" src="img/learnmode/ia.svg" alt="">
+                      
+                      <div class="col-lg-8 mx-auto">
+                          <h4 class="text-center">側邊導覽列設計</h4><br><br>
+                      </div>
+                      
+                    <div class="col-lg-5 mx-auto">
+                    <p style="font-weight: 600;">修改前<br></p>   <p>過去的網站架構以「資源類型」作分類，並非使用者任務導向的設計。<br><br></p>
+                      <img class="svgcenter img-fluid img-centered" src="img/learnmode/orderIA.JPG" alt="">
+                    </div>
+    
+                    <div class="col-lg-5 mx-auto">
+                        <p style="font-weight: 600;">修改後<br></p><p>
+                        我在詳細檢視網站架構後，大致掌握網站所提供的各式多媒體資源，並以使用者任務導向的方式，重新設計了網站的側導覽列如下：</p>
+                        <img class="svgcenter img-fluid img-centered" style="width: 169px;" src="img/learnmode/newIA.svg" alt="">
+                    </div>
+    
                   </div>
-                  <img class="svgcenter img-fluid img-centered" src="img/learnmode/ia.svg" alt="">
-                  
-                  <div class="col-lg-8 mx-auto">
-                      <h4 class="text-center">側邊導覽列設計</h4><br><br>
-                  </div>
-                  
-                <div class="col-lg-5 mx-auto">
-                <p style="font-weight: 600;">修改前<br></p>   <p>過去的網站架構以「資源類型」作分類，並非使用者任務導向的設計。<br><br></p>
-                  <img class="svgcenter img-fluid img-centered" src="img/learnmode/orderIA.JPG" alt="">
-                </div>
-
-                <div class="col-lg-5 mx-auto">
-                    <p style="font-weight: 600;">修改後<br></p><p>
-                    我在詳細檢視網站架構後，大致掌握網站所提供的各式多媒體資源，並以使用者任務導向的方式，重新設計了網站的側導覽列如下：</p>
-                    <img class="svgcenter img-fluid img-centered" style="width: 169px;" src="img/learnmode/newIA.svg" alt="">
-                </div>
-                <div class="col-lg-8 mx-auto">
-                  
-                </div>
               </div>
+
               <h4 class="text-center">Wireframe</h4>
               <div class="col-lg-8 mx-auto">
                 <!-- <p>三種使用者的都有各自的任務：以下學生為例，將左欄改成搜尋、預習、上課、複習四個按鈕，並將對應的學習資源往裡面倒。若要選擇資源類型時，也可以利用右上角的篩選器進行篩選。</p> -->
@@ -709,43 +726,54 @@
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/class.png" alt="">
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/review.png" alt="">
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/search.png" alt="">
-              <h4 class="text-center">課程卡片設計</h4>
-              <img class="svgcenter img-fluid img-centered" src="img/learnmode/card.png" alt="">
-              <div class="col-lg-8 mx-auto">
-                  <h4 class="text-center">課程頁面設計</h4>
-                  <p><br>在課程頁面，我主要依循使用者的兩大需求來設計，分別是「滿足學習需求」與「強化動力」。以下針對每個功能詳細說明：
-                  <br>
-                  </p>
+
+              
+                  <h4 class="text-center">課程卡片設計</h4>
+                  <img class="svgcenter img-fluid img-centered" src="img/learnmode/card.png" alt="">
+                  <div class="col-lg-8 mx-auto">
+                  <div id="class-design">
+                      <h4 class="text-center">課程頁面設計</h4>
+                      <p><br>在課程頁面，我主要依循使用者的兩大需求來設計，分別是「滿足學習需求」與「強化動力」。以下針對每個功能詳細說明：
+                      <br>
+                      </p>
+                  </div>
+                  <img class="svgcenter img-fluid img-centered" src="img/learnmode/coursedesign.svg" alt="">
+                  <div class="col-lg-8 mx-auto">
+                    ※以下理論皆有科學/實驗證明。
+                    <p>討論區</P>
+                    <ol>
+                      <li>同儕間一起學習、互相討論、能夠有效強化學習動機。</li>
+                      <li>能夠讓不敢在學校舉手的學生，有機會在討論區中發問</li>
+                      <li>學生間也可以互相回答對方的問題，教別人就是最有效的內化知識方法，還能夠訓練學生表達能力和同理心。</li>
+                    </ol>
+                    <p>記錄功能</P>
+                      <ol>
+                        <li>讓學生在觀看影片時，遇到問題或課程重點，能夠標記時間點。</li>
+                        <li>可以寫下任何自己對課程的筆記或想法。</li>
+                    </ol>
+                    <p>強化動力</P>
+                      <ol>
+                        <li>徽章：徽章在完成每個小任務時出現，「獎勵機制」在形成習慣是很重要的要素。</li>
+                        <li>等級：科學證明，將課程遊戲化，能夠有效提升學生的學習動力和成就感。學生時期最有興趣的事物莫過於電玩，讓學生在上課的同時有類似電玩遊戲提升等級的感覺。
+                          遊戲等級結合社群，能夠讓同儕間有良性競爭，想要努力提升自己的等級。
+                        </li>
+                    </ol>
+                  </div>
               </div>
-              <img class="svgcenter img-fluid img-centered" src="img/learnmode/coursedesign.svg" alt="">
-              <div class="col-lg-8 mx-auto">
-                ※以下理論皆有科學/實驗證明。
-                <p>討論區</P>
-                <ol>
-                  <li>同儕間一起學習、互相討論、能夠有效強化學習動機。</li>
-                  <li>能夠讓不敢在學校舉手的學生，有機會在討論區中發問</li>
-                  <li>學生間也可以互相回答對方的問題，教別人就是最有效的內化知識方法，還能夠訓練學生表達能力和同理心。</li>
-                </ol>
-                <p>記錄功能</P>
-                  <ol>
-                    <li>讓學生在觀看影片時，遇到問題或課程重點，能夠標記時間點。</li>
-                    <li>可以寫下任何自己對課程的筆記或想法。</li>
-                </ol>
-                <p>強化動力</P>
-                  <ol>
-                    <li>徽章：徽章在完成每個小任務時出現，「獎勵機制」在形成習慣是很重要的要素。</li>
-                    <li>等級：科學證明，將課程遊戲化，能夠有效提升學生的學習動力和成就感。學生時期最有興趣的事物莫過於電玩，讓學生在上課的同時有類似電玩遊戲提升等級的感覺。
-                      遊戲等級結合社群，能夠讓同儕間有良性競爭，想要努力提升自己的等級。
-                    </li>
-                </ol>
-              </div>
+
+
 
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/video.png" alt="">
 
               <h4 class="text-center">Mockup(Visual Design)</h4>
               <br><br>
-              <h5 class="text-center">Landing page</h5>
-              <img class="svgcenter img-fluid img-centered" src="img/learnmode/landing-page.svg" alt="">
+
+              <div id="landing-page">
+                  <h5 class="text-center">Landing page</h5>
+                  <img class="svgcenter img-fluid img-centered" src="img/learnmode/landing-page-big.svg" alt="">
+              </div>
+
+
               <h5 class="text-center">搜尋頁</h5>
               <img class="svgcenter img-fluid img-centered" src="img/learnmode/search.svg" alt="">
               <h5 class="text-center">預習</h5>
@@ -768,7 +796,7 @@
                 </div>
                 <div class="col-lg-6 mx-auto">
                   <p class="text-center">修改後<br></p>
-                  <img class="svgcenter img-fluid img-centered" src="img/learnmode/landing-page.svg" alt="">
+                  <img class="svgcenter img-fluid img-centered" src="img/learnmode/landing-page-small.svg" alt="">
                 </div>
               </div>
               <br>
@@ -1418,34 +1446,13 @@
                   <hr class="highbla">
                   <br>
 
-                  <p class="text-center">平時擔任美宣、創作練習時所累積的平面作品</p>
-
-                  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img class="d-block w-100" src="img/Graphic/boat.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                          <img class="d-block w-100" src="img/Graphic/ITseed.png" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                          <img class="d-block w-100" src="img/Graphic/poster2.jpg" alt="Third slide">
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
+                  <p class="text-center">擔任各活動美宣、自我創作時所累積的平面作品</p>
+                  <div class="col-lg-10 mx-auto">
+                    <img class="img-fluid img-centered" src="img/Graphic/boat.png" alt="">
+                    <img class="img-fluid img-centered" src="img/Graphic/ITseed.png" alt="">
+                    <img class="img-fluid img-centered" src="img/Graphic/poster2.jpg" alt="">
+                  </div>
+                  </div>
                   <br>
                 <h4>Tool</h4>
                 <p>AI。</p>
